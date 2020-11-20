@@ -1,0 +1,48 @@
+.Header {
+  width: 100vw;
+  min-height: 100px;
+  display: flex;
+  align-items: center;
+  .Header__Container {
+    max-width: 1633px;
+    margin: 0 auto;
+    display: flex;
+    width: 100%;
+  }
+
+  position: fixed;
+  top: 0;
+  &__Logo {
+    flex: 1;
+    img {
+      height: 26px;
+    }
+  }
+  &__Navigation {
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    a {
+      text-decoration: none;
+      color: white;
+      font-weight: 700;
+      font-size: 16px;
+      padding: 10px 25px;
+      transition: all 500ms cubic-bezier(0.173, 0.883, 0.3, 1.073) 0s;
+      -moz-transition: all 500ms cubic-bezier(0.173, 0.883, 0.3, 1.073) 0s;
+      -webkit-transition: all 500ms cubic-bezier(0.173, 0.883, 0.3, 1.073) 0s;
+      &:hover {
+        border-bottom: 1px solid #29b82e;
+      }
+    }
+  }
+  .Search {
+    display: flex;
+    flex: 1;
+    justify-content: flex-end;
+    img {
+      width: 18px;
+      height: 18px;
+    }
+  }
+}
