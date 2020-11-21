@@ -2,17 +2,17 @@ import Head from 'next/head'
 import { NextPage } from 'next'
 import Layout from '@/components/layout/layout'
 import LayoutContainer from '@/components/layout/layout-container'
-import ContactPage from '@/components/contact/contact'
+import ExpertisePage from '@/components/expertise/expertise'
 
 const Contact: NextPage = () => {
   return (
     <>
       <Head>
-        <title>Contact</title>
+        <title>Expertise</title>
       </Head>
-      <Layout className="Contact">
+      <Layout className="Expertise">
         <LayoutContainer>
-          <ContactPage />
+          <ExpertisePage />
         </LayoutContainer>
       </Layout>
     </>

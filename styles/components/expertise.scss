@@ -1,0 +1,25 @@
+.Expertise-page {
+  background-image: url(https://wtt-solutions.com/wp-content/uploads/2018/07/christopher-gower-291246-unsplash.jpg);
+  background-size: cover;
+  width: 100vw;
+  height: 550px;
+  
+  .Expertise-page__black-cover {
+    background-color: black;
+    width: 100vw;
+    height: 550px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: .2;
+    transition: .6s;
+    &:hover {
+      opacity: .5;
+      transition: .6s;
+    }
+  }
+  .Contact-page__img {
+    font-size: 40px;
+    color: white;
+  }
+}
