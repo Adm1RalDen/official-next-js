@@ -1,13 +1,144 @@
 .Main {
-  .Main__Head-images {
+  .Main__Head-image {
     background-image: url('../../public/images/main-page-background.jpg');
     width: 100%;
-    height: 100vh;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
     opacity: 1;
     visibility: inherit;
-    z-index: 20;
+    animation: background 1.5s 1;
+    height: 750px;
+    position: relative;
+    h1 {
+      position: relative;
+      left: 27%;
+      text-transform: uppercase;
+      white-space: normal;
+      font-size: calc(1rem + 1.6vw);
+      line-height: 60px;
+      color: rgb(41, 45, 50);
+      font-family: Lato;
+      letter-spacing: 1vw;
+      visibility: inherit;
+      font-weight: 700;
+      display: inline-block;
+      opacity: 0;
+      animation: header-title 1.5s 1;
+      animation-delay: 1.5s;
+      animation-fill-mode: forwards;
+      @media (max-width: $laptop) {
+        left: 20%;
+        top: 5%;
+        line-height: 50px;
+        // font-size: 36px;
+      }
+      @media (max-width: $mobile) {
+        // font-size: 20px;
+        top: 10%;
+        line-height: 40px;
+        left: 15%;
+      }
+    }
+    svg.Main__scroll-to-down {
+      right: calc(50% - 25px);
+      width: 50px;
+      height: 32px;
+      bottom: 100px;
+      transform: rotate(90deg);
+      position: absolute;
+      polyline {
+        stroke: white;
+      }
+      &:hover {
+        cursor: pointer;
+      }
+      opacity: 0;
+      animation: drag-to-down 0.5s 3s,
+        arrow-for-scroll-to-bottom 1.5s 3.5s infinite alternate;
+    }
+  }
+  .Main__welcome {
+    transition: all 0.6s ease;
+    padding: 65px;
+    height: 400px;
+    font-size: 30px;
+    background-color: #292d32;
+    color: white;
+    h3 {
+      font-size: 18px;
+      font-weight: 300;
+      margin-bottom: 15px;
+    }
+
+    .Main__button {
+      background: none;
+      border: 2px solid white;
+      color: white;
+      font-size: 14px;
+      padding: 15px 25px;
+      transition: all 0.6s ease;
+      opacity: 0;
+      transform: translateY(130px);
+      &:hover {
+        background: white;
+        color: black;
+      }
+    }
+    &:hover {
+      transition: all 0.6s ease;
+      background-color: rgb(130, 189, 12);
+      .Main__button {
+        opacity: 1;
+        transform: translateY(30px);
+      }
+    }
+  }
+}
+
+@keyframes background {
+  0% {
+    background-position-y: 425%;
+  }
+  10% {
+    background-position-y: 325%;
+  }
+
+  100% {
+    background-position-y: center;
+  }
+}
+
+@keyframes header-title {
+  0% {
+    opacity: 0;
+    transform: translateY(200%);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(135%);
+  }
+}
+
+@keyframes drag-to-down {
+  0% {
+    opacity: 1;
+    transform: translateY(-20px) rotate(90deg);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0px) rotate(90deg);
+  }
+}
+
+@keyframes arrow-for-scroll-to-bottom {
+  0% {
+    opacity: 1;
+    transform: translateY(0) rotate(90deg);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(10px) rotate(90deg);
   }
 }
