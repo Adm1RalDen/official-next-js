@@ -1,16 +1,38 @@
 import Link from 'next/link'
 import Logo from 'assets/icons/logo-wtt-w.svg'
+import { useScrollPosition } from '@n8tb1t/use-scroll-position'
+import { useState } from 'react'
 
 interface IHeader {
   bgColor?: string
 }
 
 const Header: React.FC<IHeader> = (props: IHeader) => {
+  const [isFixed, setIsFixed] = useState(true)
+
+  useScrollPosition(
+    ({ _, currPos }) => {
+      if (currPos.y === 0) {
+        setIsFixed(true)
+      } else {
+        isFixed && setIsFixed(false)
+      }
+    },
+    [],
+    undefined,
+    undefined,
+    100
+  )
+
   return (
-    <div className="Header">
+    <div className={`Header ${isFixed ? 'absolute' : 'transparent'}`}>
       <div className="Header__Container">
         <div className="Header__Logo">
-          <img src="icons/logo-wtt-w.svg" />
+          <Link href="/">
+            <a>
+              <img src={`icons/logo-wtt${isFixed ? '-w' : ''}.svg`} />
+            </a>
+          </Link>
         </div>
         <nav className="Header__Navigation">
           <Link href="expertise">

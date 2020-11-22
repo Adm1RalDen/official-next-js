@@ -1,4 +1,6 @@
 import Arrow from 'assets/icons/arrow.svg'
+import WorkCard from '../work-card/work-card'
+import { WorkDataList } from './work-list-data'
 
 const Main: React.FC = () => {
   return (
@@ -21,6 +23,11 @@ const Main: React.FC = () => {
         </p>
         <button className="Main__button">OUR EXPERTISE</button>
       </div>
+      <div className="Main__works-card-list">
+        {WorkDataList.map((elem) => (
+          <WorkCard {...elem} />
+        ))}
+      </div>  
     </div>
   )
 }
