@@ -1,15 +1,16 @@
 .Button {
-    border: none;
-    border-bottom: 1px solid;
-    text-transform: uppercase;
-    padding: 0;
-    padding-bottom: 5px;
-    font-size: 20px;
-    background: transparent;
-    transition: .4s;
-    font-weight: 600;
-    &:hover {
-        transition: .4s;
-        color: green;
-    }
+  border: 3px solid black;
+  text-transform: uppercase;
+  padding: 16px 30px;
+  text-align: center;
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 1;
+  transition: color 0.6s ease, background 0.6s ease;
+  background: transparent;
+  margin: 30px 0 10px;
+  &:hover {
+    color: white;
+    background: black;
+  }
 }

@@ -165,3 +165,9 @@
   }
 }
 
+@mixin adaptive-font-size($min, $max) {
+  $addSize: $max - $min;
+  font-size: calc(
+    #{$min + px} + #{$addSize} * ((100vw - 320px) / (2000 - 320))
+  );
+}

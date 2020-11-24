@@ -1,0 +1,32 @@
+.Footer {
+  padding: 55px 0;
+  font-size: 13px;
+  background: #f4f4f4;
+
+  .Footer__container {
+    display: grid;
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 0 65px;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-auto-rows: auto;
+    @media (max-width: $mobile) {
+        grid-template-columns: 1fr;
+        .Footer__section { 
+            margin-bottom: 30px;
+        }
+      }
+    .Footer__section {
+      color: #4c4d4f;
+      a {
+        color: #29b82e;
+      }
+      h3 {
+        text-transform: uppercase;
+        font-weight: 700;
+        margin-bottom: 10px;
+        font-size: 12px;
+      }
+    }
+  }
+}

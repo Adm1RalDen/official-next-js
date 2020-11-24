@@ -29,7 +29,7 @@ export const WorkDataList = [
   },
   {
     href: 'works/Project5.png',
-    linkUrl: './images/Screen5.png',
+    linkUrl: './images/Screen1.png',
     imageAlt: 'Construction project management system',
     workName: 'Construction project management system',
     tehnoList: ['UI/UX Design'],

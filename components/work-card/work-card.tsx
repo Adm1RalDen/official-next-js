@@ -14,8 +14,9 @@ const WorkCard: React.FC<IWorkCard> = (props: IWorkCard) => {
       <Link href={props.href}>
         <a>
           <img src={props.linkUrl} alt={props.imageAlt} />
+          <div className="work-card__grey" />
           <div className="work-card__about">
-            <p>{props.tehnoList.join(' / ')}</p>
+            <p className="uppercase">{props.tehnoList.join(' / ')}</p>
             <p>{props.workName}</p>
           </div>
         </a>
