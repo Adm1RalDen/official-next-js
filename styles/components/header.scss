@@ -57,6 +57,9 @@
         border-bottom: 1px solid #29b82e;
       }
     }
+    @media (max-width: $mobile) {
+      display: none;
+    }
   }
   .Search {
     display: flex;
