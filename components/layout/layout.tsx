@@ -1,4 +1,5 @@
 import Header from 'components/header/header'
+import Footer from 'components/footer/footer'
 import Meta from './layout-meta'
 
 interface PageProps {
@@ -19,6 +20,7 @@ const Layout: React.FC<PageProps> = (props: PageProps) => {
       <div className={`Layout${className ? ` ${className}` : ``}`}>
         <Header bgColor={colorized ? '' : color} />
         {props.children}
+        <Footer />
       </div>
     </>
   )
