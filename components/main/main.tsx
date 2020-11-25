@@ -25,7 +25,7 @@ const Main: React.FC = () => {
       </div>
       <div className="Main__works-card-list">
         {WorkDataList.map((elem) => (
-          <WorkCard {...elem} />
+          <WorkCard {...elem} key={elem.workName + Math.random()}/>
         ))}
       </div>  
     </div>

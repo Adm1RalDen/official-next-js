@@ -1,8 +1,8 @@
 import Head from 'next/head'
 import { NextPage } from 'next'
-import Layout from '@/components/layout/layout'
-import LayoutContainer from '@/components/layout/layout-container'
-import ExpertisePage from '@/components/expertise/expertise'
+import Layout from 'components/layout/layout'
+import LayoutContainer from 'components/layout/layout-container'
+import ExpertisePage from 'components/expertise/expertise'
 
 const Contact: NextPage = () => {
   return (

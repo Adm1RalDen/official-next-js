@@ -9,26 +9,38 @@ const ExpertisePage = () => {
       <div className="Expertise-page__black-cover">
         <div className="Contact-page__img"></div>
       </div>
-      <span>What We Do</span>
-      <br />
-      <span>
+      <span className="Expertise-page__ww-do">What We Do</span>
+      <span className="Expertise-page__explanation">
         We help startups and corporates develop world-class SaaS products: IOT,
         AI, Risks Assessment, HR/Membership, Marketing
       </span>
-      {imgData.map((el) => (
-        <div>
-          {el.title}
-          {el.text}
-        </div>
-      ))}
-      {skillsData.map((el) => (
-        <div>{el}</div>
-      ))}
-      <div>WORKING WITH US</div>
-      <div>
-        We strive to meet your business goals through technology implementation.
+      <div className="Expertise-page__cards">
+        {imgData.map((el) => (
+          <div className="Expertise-page__cards-each">
+            <div className="Expertise-page__svg">{el.img}</div>
+            <div className="Expertise-page__tt-wrapper">
+              <div className="Expertise-page__title">{el.title}</div>
+              <div className="Expertise-page__text">{el.text}</div>
+            </div>
+          </div>
+        ))}
       </div>
-      <Button name="GET IN TOUCH" />
+      <div className="Expertise-page__knowledges">
+        {skillsData.map((el) => (
+          <>
+            {el.img}
+            <div className="Expertise-page__knowledges-each">{el.value}</div>
+          </>
+        ))}
+      </div>
+      <div className="Expertise-page__last-block">
+        <div className="Expertise-page__last-block-wws">WORKING WITH US</div>
+        <div className="Expertise-page__last-block-text">
+          We strive to meet your business goals through technology
+          implementation.
+        </div>
+        <Button name="GET IN TOUCH" className="button1" />
+      </div>
     </div>
   )
 }
