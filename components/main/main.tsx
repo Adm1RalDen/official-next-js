@@ -3,6 +3,7 @@ import Link from 'next/link'
 import WorkCard from '../work-card/work-card'
 import Button from '../_elements/button'
 import { WorkDataList } from './work-list-data'
+import { ScrollTo } from 'react-scroll-to'
 
 const Main: React.FC = () => {
   return (
@@ -11,7 +12,14 @@ const Main: React.FC = () => {
         <h1>
           software and <br /> development <br /> agency
         </h1>
-        <Arrow className="Main__scroll-to-down" />
+        <ScrollTo>
+          {({ scroll }) => (
+            <Arrow
+              className="Main__scroll-to-down"
+              onClick={() => scroll({ x: 20, y: 700, smooth: true })}
+            />
+          )}
+        </ScrollTo>
       </div>
       <div className="Main__welcome">
         <div className="Main__welcome-container ">
@@ -29,7 +37,7 @@ const Main: React.FC = () => {
       </div>
       <div className="Main__works-card-list">
         {WorkDataList.map((elem) => (
-          <WorkCard {...elem} key={elem.workName + Math.random()}/>
+          <WorkCard {...elem} key={elem.workName + Math.random()} />
         ))}
       </div>
       <div className="Main__working-with-us">
@@ -38,7 +46,7 @@ const Main: React.FC = () => {
         <p>Client satisfaction and quality work are our top priorities.</p>
         <Link href="contact">
           <a>
-            <Button name="get in touch" />
+            <Button name="get in touch" size="small" />
           </a>
         </Link>
       </div>

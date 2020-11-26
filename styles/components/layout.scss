@@ -1,0 +1,26 @@
+.Layout {
+  .Scroll-To-Top {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    bottom: 25px;
+    right: 50px;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    font-size: 12px;
+    font-weight: 700;
+    background: #1bba1f;
+    color: white;
+    transition: all 0.5s ease;
+    text-transform: uppercase;
+    &:hover {
+      background: black;
+      cursor: pointer;
+    }
+    &.hide {
+      transform: translateY(200px);
+    }
+  }
+}
