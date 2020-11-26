@@ -1,14 +1,35 @@
 .Header {
-  width: 100vw;
-  min-height: 100px;
+  width: 100%;
+  min-height: 125px;
   display: flex;
   align-items: center;
   z-index: 100;
+  transition: min-height 0.3s ease;
+  padding: 0 150px;
+  @media (max-width: $laptop) {
+    padding: 0 45px;
+  }
+
+  &.transparent {
+    background: white;
+    min-height: 75px;
+    a {
+      color: black;
+    }
+    box-shadow: $box-shadow;
+    img {
+      height: 35px;
+    }
+  }
   .Header__Container {
-    max-width: 1633px;
     margin: 0 auto;
     display: flex;
     width: 100%;
+    align-items: center;
+    @media (max-width: $mobile) {
+      flex-direction: column;
+      padding: 20px 0;
+    }
   }
 
   position: fixed;
@@ -35,6 +56,9 @@
       &:hover {
         border-bottom: 1px solid #29b82e;
       }
+    }
+    @media (max-width: $mobile) {
+      display: none;
     }
   }
   .Search {

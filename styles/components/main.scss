@@ -15,11 +15,11 @@
       left: 27%;
       text-transform: uppercase;
       white-space: normal;
-      font-size: calc(1rem + 1.6vw);
-      line-height: 60px;
+      @include adaptive-font-size(13, 43);
+      line-height: 50px;
       color: rgb(41, 45, 50);
       font-family: Lato;
-      letter-spacing: 1vw;
+      letter-spacing: 0.6vw;
       visibility: inherit;
       font-weight: 700;
       display: inline-block;
@@ -28,16 +28,12 @@
       animation-delay: 1.5s;
       animation-fill-mode: forwards;
       @media (max-width: $laptop) {
-        left: 20%;
-        top: 5%;
-        line-height: 50px;
-        // font-size: 36px;
+        line-height: 40px;
+        top: 10%;
       }
       @media (max-width: $mobile) {
-        // font-size: 20px;
-        top: 10%;
-        line-height: 40px;
-        left: 15%;
+        top: 17%;
+        line-height: 30px;
       }
     }
     svg.Main__scroll-to-down {
@@ -60,15 +56,19 @@
   }
   .Main__welcome {
     transition: all 0.6s ease;
-    padding: 65px;
-    height: 400px;
-    font-size: 30px;
+    min-height: 400px;
     background-color: #292d32;
-    color: white;
-    h3 {
-      font-size: 18px;
-      font-weight: 300;
-      margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+    .Main__welcome-container {
+      padding: 15px 65px;
+      @include adaptive-font-size(18, 30);
+      color: white;
+      h3 {
+        font-size: 18px;
+        font-weight: 300;
+        margin-bottom: 15px;
+      }
     }
 
     .Main__button {
@@ -84,14 +84,50 @@
         background: white;
         color: black;
       }
+      @media (max-width: $mobile) {
+        opacity: 1;
+        transform: translateY(30px);
+      }
     }
     &:hover {
       transition: all 0.6s ease;
-      background-color: rgb(130, 189, 12);
+      background-color: #1bba1f;
       .Main__button {
         opacity: 1;
         transform: translateY(30px);
       }
+    }
+  }
+  .Main__works-card-list {
+    padding: 15px 0;
+    display: grid;
+    grid-gap: 15px;
+    grid-template-columns: repeat(auto-fill, minmax(30vw, 1fr));
+    grid-auto-rows: 30vw;
+    @media (max-width: $mobile) {
+      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+      grid-auto-rows: 300px;
+    }
+  }
+  .Main__working-with-us {
+    padding: 15px 65px;
+    min-height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    background-color: #f4f4f4;
+    h2 {
+      font-size: 18px;
+      line-height: 1.42857;
+      margin-bottom: 10px;
+      color: #999999;
+    }
+    p {
+      text-align: left;
+      line-height: 1.42857;
+      color: black;
+      @include adaptive-font-size(20, 30);
     }
   }
 }

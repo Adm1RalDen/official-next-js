@@ -1,0 +1,135 @@
+.Expertise-page {
+  height: 100%;
+  .Expertise-page__wrapper {
+    background-image: url(https://wtt-solutions.com/wp-content/uploads/2018/07/christopher-gower-291246-unsplash.jpg);
+    background-size: auto;
+    position: relative;
+    background-repeat: no-repeat;
+    height: 550px;
+    .Expertise-page__black-cover {
+      overflow: hidden;
+      background-color: black;
+      width: 100%;
+      height: 550px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      opacity: 0.2;
+      transition: 0.6s;
+      &:hover {
+        opacity: 0.5;
+        transition: 0.6s;
+      }
+    }
+  }
+  .Expertise-page__img-text {
+    font-size: 40px;
+    color: white;
+    z-index: 1;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+  }
+  .Expertise-page__ww-do {
+    display: block;
+    text-align: center;
+    font-size: 25px;
+    padding-top: 100px;
+    padding-bottom: 15px;
+  }
+  .Expertise-page__explanation {
+    display: block;
+    text-align: center;
+    padding-bottom: 30px;
+  }
+  .Expertise-page__cards {
+    display: flex;
+    margin: 0 10px;
+    .Expertise-page__cards-each {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 0 35px;
+      margin: 20px;
+      min-height: 380px;
+      background: #282d32;
+      color: white;
+      font-weight: 18px;
+      transition: 0.6s;
+      &:hover {
+        background: rgb(0, 187, 0);
+        transition: 0.6s;
+        svg {
+          opacity: 0;
+          transition: 0.6s;
+        }
+      }
+      .Expertise-page__svg {
+        width: 100%;
+        height: auto;
+        position: absolute;
+        top: 20px;
+        left: 20px;
+        > svg {
+          width: 50px;
+          text-align: left;
+          fill: rgb(238, 238, 238);
+          transition: 0.6s;
+        }
+      }
+      .Expertise-page__tt-wrapper {
+        max-height: 220px;
+        .Expertise-page__title {
+          font-size: 20px;
+          padding-bottom: 15px;
+          font-weight: 600;
+          text-align: center;
+        }
+        .Expertise-page__text {
+          text-align: center;
+          font-size: 18px;
+          line-height: 1.4;
+        }
+      }
+    }
+  }
+  .Expertise-page__knowledges {
+    display: flex;
+    width: 66%;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    padding-top: 15px;
+    .Expertise-page__knowledges-wrapper {
+      display: flex;
+      flex-direction: column;
+      width: 25%;
+      align-items: center;
+      padding: 70px 0;
+      > svg {
+        width: 50px;
+        padding-bottom: 20px;
+      }
+      .Expertise-page__knowledges-each {
+        text-align: center;
+      }
+    }
+  }
+  .Expertise-page__last-block {
+    padding: 0 65px;
+    .Expertise-page__last-block-wws {
+      font-size: 18px;
+      color: rgb(175, 175, 175);
+      padding: 100px 0 10px;
+    }
+    .Expertise-page__last-block-text {
+      font-size: 50px;
+      line-height: 1.2;
+    }
+    > button {
+      margin: 50px 0 150px;
+    }
+  }
+}
