@@ -13,7 +13,7 @@ const Header: React.FC<IHeader> = (props: IHeader) => {
           <img src="icons/logo-wtt-w.svg" />
         </div>
         <nav className="Header__Navigation">
-          <Link href="expertise">
+          <Link href="about">
             <a>About</a>
           </Link>
           <Link href="expertise">
