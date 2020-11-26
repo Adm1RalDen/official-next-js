@@ -1,13 +1,19 @@
 import Link from 'next/link'
-import Logo from 'assets/icons/logo-wtt-w.svg'
 import { useScrollPosition } from '@n8tb1t/use-scroll-position'
 import { useState } from 'react'
+import { useRouter } from 'next/router'
 
 interface IHeader {
   bgColor?: string
+  headerIsFixed?: boolean
+  headerColor?: string
 }
 
 const Header: React.FC<IHeader> = (props: IHeader) => {
+  const { headerIsFixed, headerColor } = props
+  const router = useRouter()
+  const currentRoute = router.pathname.slice(1)
+
   const [isFixed, setIsFixed] = useState(true)
 
   useScrollPosition(
@@ -24,29 +30,39 @@ const Header: React.FC<IHeader> = (props: IHeader) => {
     100
   )
 
+  const routes = ['About', 'Expertise', 'Work', 'Contact']
+
   return (
-    <div className={`Header ${isFixed ? 'absolute' : 'transparent'}`}>
+    <div
+      className={`Header ${
+        headerIsFixed ? 'inContent' : isFixed ? 'absolute' : 'transparent'
+      }`}
+      style={headerColor ? { background: headerColor } : {}}
+    >
       <div className="Header__Container">
         <div className="Header__Logo">
           <Link href="/">
             <a>
-              <img src={`icons/logo-wtt${isFixed ? '-w' : ''}.svg`} />
+              <img
+                src={`icons/logo-wtt${
+                  isFixed && !headerIsFixed ? '-w' : ''
+                }.svg`}
+              />
             </a>
           </Link>
         </div>
         <nav className="Header__Navigation">
-          <Link href="expertise">
-            <a>About</a>
-          </Link>
-          <Link href="expertise">
-            <a>Expertise</a>
-          </Link>
-          <Link href="work">
-            <a>Work</a>
-          </Link>
-          <Link href="contact">
-            <a>Contact</a>
-          </Link>
+          {routes.map((r) => {
+            return (
+              <Link href={r.toLowerCase()}>
+                <a
+                  className={currentRoute === r.toLowerCase() ? 'selected' : ''}
+                >
+                  {r}
+                </a>
+              </Link>
+            )
+          })}
         </nav>
         <div className="Search">
           <img src="./images/search.png" />

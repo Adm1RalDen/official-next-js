@@ -10,7 +10,7 @@ const Contact: NextPage = () => {
       <Head>
         <title>Contact</title>
       </Head>
-      <Layout className="Contact">
+      <Layout className="Contact" headerIsFixed={true} headerColor="white">
         <LayoutContainer>
           <ContactPage />
         </LayoutContainer>

@@ -4,22 +4,33 @@
   display: flex;
   align-items: center;
   z-index: 100;
-  transition: min-height 0.3s ease;
+  transition: min-height 0.5s ease;
   padding: 0 150px;
-  @media (max-width: $laptop) {
-    padding: 0 45px;
-  }
-
-  &.transparent {
-    background: white;
-    min-height: 75px;
+  &.inContent {
+    position: absolute;
     a {
       color: black;
+      &.selected {
+        color: #29b82e;
+      }
+    }
+  }
+  &.transparent {
+    background: white;
+    min-height: 80px;
+    a {
+      color: black;
+      &.selected {
+        color: #29b82e;
+      }
     }
     box-shadow: $box-shadow;
     img {
       height: 35px;
     }
+  }
+  @media (max-width: $laptop) {
+    padding: 0 45px;
   }
   .Header__Container {
     margin: 0 auto;
@@ -50,11 +61,29 @@
       font-weight: 700;
       font-size: 16px;
       padding: 10px 25px;
-      transition: all 500ms cubic-bezier(0.173, 0.883, 0.3, 1.073) 0s;
-      -moz-transition: all 500ms cubic-bezier(0.173, 0.883, 0.3, 1.073) 0s;
-      -webkit-transition: all 500ms cubic-bezier(0.173, 0.883, 0.3, 1.073) 0s;
+      position: relative;
+      display: inline-block;
+
+      transition: all 300ms cubic-bezier(0.173, 0.883, 0.3, 1.073) 0s;
+      -moz-transition: all 300ms cubic-bezier(0.173, 0.883, 0.3, 1.073) 0s;
+      -webkit-transition: all 300ms cubic-bezier(0.173, 0.883, 0.3, 1.073) 0s;
+
       &:hover {
-        border-bottom: 1px solid #29b82e;
+        color: #29b82e;
+        &:after {
+          width: 100%;
+        }
+      }
+      &:after {
+        position: absolute;
+        content: '';
+        width: 0;
+        height: 1px;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background: #29b82e;
+        transition: all 0.3s;
       }
     }
     @media (max-width: $mobile) {

@@ -8,7 +8,8 @@
     opacity: 1;
     visibility: inherit;
     animation: background 1.5s 1;
-    height: 750px;
+    animation-delay: 0.5s;
+    height: 869px;
     position: relative;
     h1 {
       position: relative;
@@ -128,6 +129,9 @@
       line-height: 1.42857;
       color: black;
       @include adaptive-font-size(20, 30);
+    }
+    .Button {
+      margin-top: 30px;
     }
   }
 }
