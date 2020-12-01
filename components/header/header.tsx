@@ -47,6 +47,7 @@ const Header: React.FC<IHeader> = (props: IHeader) => {
                 src={`icons/logo-wtt${
                   isFixed && !headerIsFixed ? '-w' : ''
                 }.svg`}
+                alt="Logo"
               />
             </a>
           </Link>
@@ -54,7 +55,7 @@ const Header: React.FC<IHeader> = (props: IHeader) => {
         <nav className="Header__Navigation">
           {routes.map((r) => {
             return (
-              <Link href={r.toLowerCase()}>
+              <Link href={r.toLowerCase()} key={r}>
                 <a
                   className={currentRoute === r.toLowerCase() ? 'selected' : ''}
                 >
@@ -65,7 +66,7 @@ const Header: React.FC<IHeader> = (props: IHeader) => {
           })}
         </nav>
         <div className="Search">
-          <img src="./images/search.png" />
+          <img src="./images/search.png" alt="search icon" />
         </div>
       </div>
     </div>

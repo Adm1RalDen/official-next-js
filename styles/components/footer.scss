@@ -8,14 +8,18 @@
     max-width: 1300px;
     margin: 0 auto;
     padding: 0 65px;
+    @media (max-width: $mobile) {
+      padding: 0 35px;
+    }
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     grid-auto-rows: auto;
     @media (max-width: $mobile) {
-        grid-template-columns: 1fr;
-        .Footer__section { 
-            margin-bottom: 30px;
-        }
+      grid-template-columns: 1fr;
+      .Footer__section {
+        margin-bottom: 30px;
+        text-align: center;
       }
+    }
     .Footer__section {
       color: #4c4d4f;
       a {

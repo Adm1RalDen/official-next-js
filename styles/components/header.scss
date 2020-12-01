@@ -27,6 +27,9 @@
     box-shadow: $box-shadow;
     img {
       height: 35px;
+      @media (max-width: $mobile) {
+        height: 20px;
+      }
     }
   }
   @media (max-width: $laptop) {
