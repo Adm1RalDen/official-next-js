@@ -11,14 +11,14 @@ export const WorkDataList = [
     linkUrl: './images/Screen3.png',
     imageAlt: 'Moving Company Website Redesign',
     workName: 'Moving Company Website Redesign',
-    tehnoList: ['UI/UX Design', ' Web Design & Development'],
+    tehnoList: ['UI/UX Design',  'Web Design & Development'],
   },
   {
     href: 'works/Project3.png',
     linkUrl: './images/Screen5.png',
     imageAlt: 'Goldimaz',
     workName: 'Goldimaz',
-    tehnoList: ['UI/UX Design', ' Web Design & Development'],
+    tehnoList: ['UI/UX Design', 'Web Design & Development'],
   },
   {
     href: 'works/Project4.png',
