@@ -2,21 +2,21 @@ import Head from 'next/head'
 import { NextPage } from 'next'
 import Layout from '@/components/layout/layout'
 import LayoutContainer from '@/components/layout/layout-container'
-import ContactPage from '@/components/contact/contact'
+import WorkComponent from 'components/work/work'
 
-const Contact: NextPage = () => {
+const WorkPage: NextPage = () => {
   return (
     <>
       <Head>
-        <title>Contact</title>
+        <title>Work</title>
       </Head>
-      <Layout className="Contact" headerIsFixed={true} headerColor="white">
+      <Layout className="Work-page" headerIsFixed>
         <LayoutContainer>
-          <ContactPage />
+          <WorkComponent />
         </LayoutContainer>
       </Layout>
     </>
   )
 }
 
-export default Contact
+export default WorkPage

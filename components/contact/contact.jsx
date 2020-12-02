@@ -43,7 +43,7 @@ const ContactPage = () => {
               Message
               <Textarea />
             </label>
-            <Button name="Send" className="button2"/>
+            <Button name="Send" className="button__underline"/>
           </form>
         </div>
       </div>

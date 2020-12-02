@@ -1,4 +1,23 @@
-.button2 {
+.Button {
+    border: 3px solid;
+    text-transform: uppercase;
+    padding: 20px 55px;
+    background: transparent;
+    transition: .6s;
+    font-weight: 600;
+    font-size: 13px;
+    &.small {
+        padding: 16px 30px;
+    }
+    &:hover {
+        transition: .6s;
+        background: black;
+        border: 3px solid black;
+        color: white;
+    }
+}
+
+.Button.button__underline {
     border: none;
     border-bottom: 1px solid;
     text-transform: uppercase;
@@ -11,20 +30,6 @@
     &:hover {
         transition: .4s;
         color: green;
-    }
-}
-.button1 {
-    border: 3px solid;
-    text-transform: uppercase;
-    padding: 20px 55px;
-    background: transparent;
-    transition: .6s;
-    font-weight: 600;
-    font-size: 13px;
-    &:hover {
-        transition: .6s;
-        background: black;
-        border: 3px solid black;
-        color: white;
+        border-bottom: 1px solid transparent;
     }
 }

@@ -1,5 +1,7 @@
 import Arrow from 'assets/icons/arrow.svg'
 import Link from 'next/link'
+import { ScrollTo } from 'react-scroll-to'
+// import HeaderBackgound from 'assets/backgrounds/background.svg'
 import WorkCard from '../work-card/work-card'
 import Button from '../_elements/button'
 import { WorkDataList } from './work-list-data'
@@ -8,10 +10,18 @@ const Main: React.FC = () => {
   return (
     <div className="Main">
       <div className="Main__Head-image">
+        {/* <HeaderBackgound /> */}
         <h1>
           software and <br /> development <br /> agency
         </h1>
-        <Arrow className="Main__scroll-to-down" />
+        <ScrollTo>
+          {({ scroll }) => (
+            <Arrow
+              className="Main__scroll-to-down"
+              onClick={() => scroll({ x: 20, y: 700, smooth: true })}
+            />
+          )}
+        </ScrollTo>
       </div>
       <div className="Main__welcome">
         <div className="Main__welcome-container ">
@@ -24,12 +34,16 @@ const Main: React.FC = () => {
             We have already completed more than 60 projects for our clients’
             businesses from the United States, Israel, Australia and Germany
           </p>
-          <button className="Main__button">OUR EXPERTISE</button>
+          <Link href="expertise">
+            <a>
+              <button className="Main__button">OUR EXPERTISE</button>
+            </a>
+          </Link>
         </div>
       </div>
       <div className="Main__works-card-list">
         {WorkDataList.map((elem) => (
-          <WorkCard {...elem} key={elem.workName + Math.random()}/>
+          <WorkCard {...elem} key={elem.workName + Math.random()} />
         ))}
       </div>
       <div className="Main__working-with-us">
@@ -38,7 +52,7 @@ const Main: React.FC = () => {
         <p>Client satisfaction and quality work are our top priorities.</p>
         <Link href="contact">
           <a>
-            <Button name="get in touch" />
+            <Button name="get in touch" size="small" />
           </a>
         </Link>
       </div>
