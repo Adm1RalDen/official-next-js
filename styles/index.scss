@@ -1,5 +1,3 @@
-@import 'bourbon';
-
 /* LIBRARY */
 @import './lib/reset';
 @import './lib/variables';
@@ -15,6 +13,7 @@
 @import './components/expertise';
 @import './components/work-card';
 @import './components/footer';
+@import './components/work';
 
 /* ELEMENTS */
 @import './elements/button.scss';
