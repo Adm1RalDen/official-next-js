@@ -1,44 +1,6 @@
-import TextImgBackground, {
-  TextItem,
-} from '@/components/text-img-bg/text-img-bg'
-import React, { useRef } from 'react'
-import { useMouseOver } from '../../utils/hooks'
+import React from 'react'
 
-export const AboutPage = () => {
-  const topText = ['great experiences', 'build great products']
-
-  const hoverRef = useRef<HTMLDivElement>(null)
-  const isOver = useMouseOver(hoverRef.current)
-
-  return (
-    <>
-      <TextImgBackground img={'url(images/about-bg.jpg)'}>
-        {topText.map((el, idx) => (
-          <TextItem key={idx}>{el}</TextItem>
-        ))}
-      </TextImgBackground>
-      <div className="about__container">
-        <div className="about__wtt-solutions">
-          <span className="about__wtt-solutions-title">
-            About WTT Solutions
-          </span>
-          <AboutDetails />
-        </div>
-      </div>
-      <div className="about__fixed-bg-block" ref={hoverRef}>
-        <div className="about__fixed-bg-block-overlay">
-          <div className="about__fixed-bg-block-text-container">
-            <span>Turn your ideas and experience</span>
-            <span>into a digital product</span>
-            <span>with our team</span>
-          </div>
-        </div>
-      </div>
-    </>
-  )
-}
-
-const AboutDetails = () => (
+export const AboutDetails = () => (
   <div className="about__wtt-solutions-details">
     <p>Quality comes first.</p>
     <p>

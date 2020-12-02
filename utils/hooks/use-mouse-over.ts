@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react'
 
-export const useMouseOver = (ref: HTMLDivElement | null) => {
+export const useMouseOver = (ref: HTMLElement | null) => {
   const [hovered, setHover] = useState(false)
 
   const onMouseOver = () => setHover(true)

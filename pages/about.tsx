@@ -2,7 +2,7 @@ import React from 'react'
 import Head from 'next/head'
 import Layout from '@/components/layout/layout'
 import LayoutContainer from '@/components/layout/layout-container'
-import { AboutPage } from '@/components/about-page/about-page'
+import { AboutPage } from '@/components/about/about-page'
 
 const About = () => {
   return (
