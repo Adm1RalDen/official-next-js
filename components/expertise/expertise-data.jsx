@@ -1,5 +1,5 @@
-import Insta from '../../assets/icons/insta.svg'
-import World from '../../assets/icons/world.svg'
+import Insta from 'assets/icons/insta.svg'
+import World from 'assets/icons/world.svg'
 
 export const imgData = [
   {
@@ -25,9 +25,16 @@ export const imgData = [
 ]
 
 export const skillsData = [
-  { value: "Bootstrap", img: <World /> }, { value: "HTML", img: <World /> },
-  { value: "CSS", img: <World /> }, { value: "Gulp", img: <World /> }, { value: "JQuery", img: <World /> },
-  { value: "SASS", img: <World /> }, { value: "Node.JS", img: <World /> }, { value:"MongoDB" , img: <World /> },
-  { value: "React", img: <World /> }, { value: "Next.js", img: <World /> }, { value: "PHP", img: <World /> },
-  { value: "JavaScript", img: <World /> }
+  { value: "Bootstrap", img: './expertise/bootstrap.png' },
+  { value: "HTML", img: './expertise/html.png' },
+  { value: "CSS", img: './expertise/css3.png' },
+  { value: "Gulp", img: './expertise/gulp.png' },
+  { value: "JQuery", img: './expertise/jquery.png' },
+  { value: "SASS", img: './expertise/sass.png' },
+  { value: "Node.JS", img: './expertise/node.png' },
+  { value: "MongoDB", img: './expertise/mongoDB.png' },
+  { value: "React", img: './expertise/react.png' },
+  { value: "Next.js", img: './expertise/bootstrap.png' },
+  { value: "PHP", img: './expertise/php.png' },
+  { value: "JavaScript", img: './expertise/js.jpg' }
 ]

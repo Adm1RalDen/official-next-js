@@ -30,7 +30,7 @@ const ExpertisePage = () => {
         <div className="Expertise-page__knowledges">
           {skillsData.map((el) => (
             <div className="Expertise-page__knowledges-wrapper">
-              {el.img}
+              <img src={el.img} alt='knw'/>
               <div className="Expertise-page__knowledges-each">{el.value}</div>
             </div>
           ))}

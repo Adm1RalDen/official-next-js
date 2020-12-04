@@ -7,7 +7,14 @@ import Textarea from '../_elements/textarea'
 const ContactPage = () => {
   return (
     <div className="Contact-page">
-      <div className="Contact-page__img">CONTACT</div>
+      <div className="Contact-page__image-wrapper">
+        <div className="image-wrapper__contact-text">
+          CONTACT
+          <div>Have a project you’re interested in discussing with us?</div>
+          <div>Drop us a line below, we’d love to talk.</div>
+        </div>
+        <div className="image-wrapper__black"></div>
+      </div>
       <div className="Contact-page__wrapper">
         <div className="Contact-page__info-wrapper">
           <div className="Contact-page__info">Info</div>
@@ -43,7 +50,7 @@ const ContactPage = () => {
               Message
               <Textarea />
             </label>
-            <Button name="Send" className="button__underline"/>
+            <Button name="Send" className="button__underline" />
           </form>
         </div>
       </div>
