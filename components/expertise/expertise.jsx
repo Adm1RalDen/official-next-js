@@ -19,7 +19,7 @@ const ExpertisePage = () => {
         <div className="Expertise-page__cards">
           {imgData.map((el) => (
             <div className="Expertise-page__cards-each" key={el.title}>
-              <div className="Expertise-page__svg">{el.img}</div>
+              <div className="Expertise-page__svg"><img  src={el.img} alt="icn"/></div>
               <div className="Expertise-page__tt-wrapper">
                 <div className="Expertise-page__title">{el.title}</div>
                 <div className="Expertise-page__text">{el.text}</div>
@@ -30,7 +30,7 @@ const ExpertisePage = () => {
         <div className="Expertise-page__knowledges">
           {skillsData.map((el) => (
             <div className="Expertise-page__knowledges-wrapper">
-              {el.img}
+              <img src={el.img} alt='knw'/>
               <div className="Expertise-page__knowledges-each">{el.value}</div>
             </div>
           ))}
