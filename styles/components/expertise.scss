@@ -31,21 +31,26 @@
     transform: translate(-50%, -50%);
     position: absolute;
   }
-  .Expertise-page__ww-do {
-    display: block;
-    text-align: center;
-    font-size: 25px;
-    padding-top: 100px;
-    padding-bottom: 15px;
+  .Expertise-page__top-text-wrapper {
+    padding: 0 30px;
+    .Expertise-page__ww-do {
+      display: block;
+      text-align: center;
+      font-size: 25px;
+      padding-top: 100px;
+      padding-bottom: 15px;
+    }
+    .Expertise-page__explanation {
+      display: block;
+      text-align: center;
+      padding-bottom: 30px;
+    }
   }
-  .Expertise-page__explanation {
-    display: block;
-    text-align: center;
-    padding-bottom: 30px;
-  }
+
   .Expertise-page__cards {
     display: flex;
     margin: 0 10px;
+    // flex-wrap: wrap;
     .Expertise-page__cards-each {
       position: relative;
       display: flex;
@@ -73,7 +78,7 @@
         position: absolute;
         top: 20px;
         left: 20px;
-        >img {
+        > img {
           width: 50px;
           text-align: left;
           fill: rgb(238, 238, 238);
@@ -113,6 +118,11 @@
         width: 50px;
         padding-bottom: 20px;
       }
+      > img {
+        margin-top: auto;
+        padding-bottom: 10px;
+        width: 7.5vw;
+      }
       .Expertise-page__knowledges-each {
         text-align: center;
       }
@@ -131,6 +141,66 @@
     }
     > button {
       margin: 50px 0 150px;
+    }
+  }
+  .animation-test {
+    text-align: center;
+    transform: translateY(100px);
+    opacity: 0;
+    transition: 1s;
+    animation: show 3s 1;
+    animation-fill-mode: forwards;
+    animation-delay: 1s;
+  }
+}
+
+@keyframes show {
+  0% {
+    opacity: 0;
+    transform: translateY(100px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (max-width: 1160px) {
+  .Expertise-page .Expertise-page__cards {
+    flex-direction: column;
+  }
+}
+
+// @media (max-width: 991px) {
+//   .Expertise-page {
+//     .Expertise-page__knowledges {
+//       .Expertise-page__knowledges-wrapper {
+//         > img {
+//           margin-top: auto;
+//           padding-bottom: 10px;
+//           width: 10vw;
+//         }
+//       }
+//     }
+//   }
+// }
+
+@media (max-width: 767px) {
+  .Expertise-page {
+    .Expertise-page__last-block {
+      padding: 0 30px;
+      .Expertise-page__last-block-text {
+        font-size: 4.5vw;
+      }
+    }
+    .animation-test .Expertise-page__knowledges {
+      justify-content: center;
+      .Expertise-page__knowledges-wrapper {
+        width: 200px;
+        > img {
+          width: 150px;
+        }
+      }
     }
   }
 }
