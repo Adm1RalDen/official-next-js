@@ -11,6 +11,7 @@ export const AboutSlider = () => {
       showStatus={false}
       swipeable={true}
       infiniteLoop={true}
+      renderIndicator={Indicator}
     >
       <Slide />
       <Slide />
@@ -18,6 +19,19 @@ export const AboutSlider = () => {
       <Slide />
     </Carousel>
   )
+}
+
+// MouseEvent<Element, MouseEvent> | KeyboardEvent<Element>
+const Indicator = (
+  onClickHandler: (e: MouseEvent | KeyboardEvent) => void,
+  isSelected: boolean,
+  index: number,
+  label: string
+) => {
+  const className = ['slider-indicator']
+  if (isSelected) className.push('slider-indicator__selected')
+
+  return <div className={className.join(' ')} />
 }
 
 const Slide = () => (
