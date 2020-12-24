@@ -2,6 +2,7 @@
   .Header {
     background: rgb(240, 240, 240);
   }
+
   .Contact-page {
     width: 1170px;
     margin: 0 auto;
@@ -11,6 +12,7 @@
     font-size: 16px;
     padding-top: 15vh;
     font-family: Lato, sans-serif;
+
     > .Contact-page__image-wrapper {
       background-image: url(https://wtt-solutions.com/wp-content/uploads/2018/07/coworking-space-feature-image-1-e1532685924837.jpeg);
       background-repeat: no-repeat;
@@ -23,6 +25,7 @@
       justify-content: center;
       align-items: center;
       position: relative;
+
       .image-wrapper__black {
         background: black;
         width: 100%;
@@ -30,74 +33,146 @@
         position: absolute;
         opacity: 0.4;
       }
+
       .image-wrapper__contact-text {
         z-index: 3;
         display: flex;
         align-items: center;
         flex-direction: column;
-        
+
         > div {
           display: flex;
           align-items: center;
           flex-direction: column;
           font-size: 35px;
         }
+
         :first-child {
           padding-top: 10px;
         }
       }
     }
+
     .Contact-page__wrapper {
       display: flex;
       flex-direction: row;
       padding: 80px 0;
+
       .Contact-page__info-wrapper {
         flex: 1;
+
         > div {
           display: flex;
           flex-direction: column;
         }
+
         .Contact-page__info {
           font-size: 35px;
           padding-bottom: 30px;
         }
+
         .Contact-page__location {
           line-height: 1.9;
         }
+
         .Contact-page__contact {
           line-height: 1.8;
           padding-top: 20px;
           font-size: 20px;
+
           > span > a {
             color: rgb(0, 183, 0);
           }
         }
       }
+
       .Contact-page__form {
         flex: 1;
         margin: 0 auto;
+
         > span {
           font-size: 35px;
         }
+
         form {
           padding: 20px 0;
+
           label {
             display: flex;
             flex-direction: column;
             padding-bottom: 12px;
+
             input,
             textarea {
               margin-top: 3px;
               min-height: 45px;
             }
+
             textarea {
               min-height: 130px;
             }
           }
+
           > button {
             margin-top: 20px;
           }
         }
+      }
+    }
+  }
+}
+
+@media (max-width: $tablet) {
+  .Contact {
+    & .Contact-page {
+      width: 100%;
+      padding: 15vh 15px 0;
+
+      & .Contact-page__image-wrapper {
+        & .image-wrapper__contact-text {
+          & > div {
+            font-size: 24px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: $mobile) {
+  .Contact {
+    & .Contact-page {
+      width: 100%;
+      padding: 15vh 15px 0;
+
+      & .Contact-page__image-wrapper {
+        background-size: cover;
+        background-position: center top;
+
+        & .image-wrapper__contact-text {
+          padding: 0 2%;
+
+          & > div {
+            font-size: 22px;
+            text-align: center;
+          }
+        }
+      }
+
+      & .Contact-page__wrapper {
+        & .Contact-page__form {
+          margin: 0;
+          margin-top: 20px;
+
+          & form button {
+            width: 100%;
+          }
+        }
+      }
+
+
+      & .Contact-page__wrapper {
+        flex-direction: column;
       }
     }
   }
