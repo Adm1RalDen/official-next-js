@@ -17,13 +17,6 @@ export const AboutPage = () => {
     { count: 14, title: 'People in team' },
     { count: 47, title: 'Clients' },
   ]
-  const settings = {
-    dots: true,
-    infinite: true,
-    speed: 500,
-    slidesToShow: 1,
-    slidesToScroll: 1,
-  }
 
   return (
     <>
