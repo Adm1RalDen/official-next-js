@@ -145,13 +145,13 @@ $indicator-grey: #D1CFCF;
   padding: 25px;
 }
 
-.control-dots{
+.control-dots {
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-.slider-indicator{
+.slider-indicator {
   margin: 0 10px;
   width: 10px;
   height: 10px;
@@ -160,7 +160,7 @@ $indicator-grey: #D1CFCF;
   border: 1px solid $white;
 }
 
-.slider-indicator__selected{
+.slider-indicator__selected {
   background: $white;
   border: 1px solid $button-green;
 }
@@ -252,6 +252,39 @@ $indicator-grey: #D1CFCF;
   }
 }
 
+@media (max-width: $tablet) {
+  .about__wtt-solutions {
+    width: auto;
+  }
+  .about__comments-content-container {
+    width: 90%;
+    & .carousel-root {
+      width: 100%;
+      & .slide__container {
+        width: 100%;
+        display: flex;
+
+        & > img {
+          display: none;
+        }
+      }
+    }
+  }
+  .about__fixed-bg-block{
+    background-position: center top;
+    background-size: cover;
+  }
+  .about__fixed-bg-block-text-container{
+    & .about__fixed-bg-block-hidden-button{
+      opacity: 1;
+      bottom: 0;
+      background: $button-green;
+      border-color: transparent;
+      font-size: 22px;
+    }
+  }
+}
+
 @media (max-width: $mobile) {
   .about__container {
     width: 100%;
@@ -268,8 +301,6 @@ $indicator-grey: #D1CFCF;
     background-attachment: scroll;
   }
   .about__fixed-bg-block:hover, .about__fixed-bg-block {
-
-
     .about__fixed-bg-block-hidden-button {
       opacity: 1;
       bottom: 0;
@@ -288,7 +319,8 @@ $indicator-grey: #D1CFCF;
     .about__comments-content-container {
       width: 100%;
       padding: 0 20px;
-      .carousel-root{
+
+      .carousel-root {
         width: 100%;
       }
     }
@@ -297,13 +329,15 @@ $indicator-grey: #D1CFCF;
     display: flex;
     height: auto;
     padding: 0 0 40px;
-    .slide__content-icon{
+
+    .slide__content-icon {
       display: none;
     }
   }
   .about__work-together-container {
     background-repeat: no-repeat;
     background-position: center top;
+
     .about__work-together-content {
       padding: 0 10%;
 
