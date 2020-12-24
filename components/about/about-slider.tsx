@@ -21,17 +21,19 @@ export const AboutSlider = () => {
   )
 }
 
-// MouseEvent<Element, MouseEvent> | KeyboardEvent<Element>
 const Indicator = (
-  onClickHandler: (e: MouseEvent | KeyboardEvent) => void,
+  onClickHandler: (
+    e: MouseEvent<Element, MouseEvent> | KeyboardEvent<Element>
+  ) => void,
   isSelected: boolean,
-  index: number,
-  label: string
+  index: number
 ) => {
   const className = ['slider-indicator']
   if (isSelected) className.push('slider-indicator__selected')
 
-  return <div className={className.join(' ')} />
+  return (
+    <div key={index} className={className.join(' ')} onClick={onClickHandler} />
+  )
 }
 
 const Slide = () => (

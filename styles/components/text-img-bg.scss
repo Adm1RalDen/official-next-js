@@ -31,6 +31,13 @@
   }
 }
 
+@media (max-width: $tablet) {
+  .text-img-bg__modal{
+    background-size: cover;
+    background-position: center top;
+  }
+}
+
 
 @media (max-width: $mobile) {
   .text-img-bg__modal{
