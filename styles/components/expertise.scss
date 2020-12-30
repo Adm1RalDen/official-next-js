@@ -4,7 +4,7 @@
   .Expertise-page__wrapper {
     background-position: center top;
     background-image: url(https://wtt-solutions.com/wp-content/uploads/2018/07/christopher-gower-291246-unsplash.jpg);
-    background-size: auto;
+    background-size: cover;
     position: relative;
     background-repeat: no-repeat;
     height: 550px;
@@ -117,20 +117,21 @@
     }
   }
 
-  .Expertise-page__knowledges {
+  .Expertise-page__knowledge {
     display: flex;
     width: 66%;
     flex-wrap: wrap;
     margin: 0 auto;
     padding-top: 15px;
 
-    .Expertise-page__knowledges-wrapper {
+    .Expertise-page__knowledge-wrapper {
       display: flex;
       flex-direction: column;
       width: 25%;
       align-items: center;
       padding: 70px 0;
       justify-content: space-between;
+      min-width: 200px;
 
       > svg {
         width: 50px;
@@ -143,9 +144,21 @@
         width: 7.5vw;
       }
 
-      .Expertise-page__knowledges-each {
+      .Expertise-page__knowledge-each {
         text-align: center;
       }
+    }
+
+    .Expertise-page__knowledge-wrapper-animated {
+      text-align: center;
+      transform: translateY(100px);
+      opacity: 0;
+      transition: 1s;
+      animation-name: show;
+      animation-duration: 1s;
+      animation-iteration-count: 1;
+      animation-fill-mode: forwards;
+      animation-delay: .5s;
     }
   }
 
@@ -166,16 +179,6 @@
     > button {
       margin: 50px 0 150px;
     }
-  }
-
-  .animation-test {
-    text-align: center;
-    transform: translateY(100px);
-    opacity: 0;
-    transition: 1s;
-    animation: show 3s 1;
-    animation-fill-mode: forwards;
-    animation-delay: 1s;
   }
 }
 
@@ -211,18 +214,25 @@
     .Expertise-page__cards {
       flex-direction: row;
       flex-wrap: wrap;
-      .Expertise-page__cards-each{
+
+      .Expertise-page__cards-each {
         width: 45%;
         margin: 18px;
       }
     }
 
-    .Expertise-page__knowledges {
+    .Expertise-page__knowledge {
       width: auto;
 
-      .Expertise-page__knowledges-wrapper > img {
-        width: 150px;
+      .Expertise-page__knowledge-container {
+        margin: 0 auto;
+
+        .Expertise-page__knowledge-wrapper > img {
+          width: 150px;
+        }
       }
+
+
     }
   }
 }
@@ -242,8 +252,9 @@
         opacity: .5;
       }
     }
+
     .Expertise-page__cards {
-      .Expertise-page__cards-each{
+      .Expertise-page__cards-each {
         width: auto;
         margin: 18px;
       }
@@ -257,17 +268,23 @@
       }
     }
 
-    .animation-test .Expertise-page__knowledges {
+    .Expertise-page__knowledge {
       justify-content: center;
 
-      .Expertise-page__knowledges-wrapper {
+      .Expertise-page__knowledge-container {
         width: 200px;
+        height: 320px;
 
-        > img {
-          width: 150px;
+        .Expertise-page__knowledge-wrapper {
+          width: 200px;
+
+          > img {
+            width: 150px;
+          }
         }
       }
     }
   }
+
 
 }
