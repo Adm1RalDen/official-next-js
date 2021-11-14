@@ -54,7 +54,3 @@ const ImageComponent = ({ title, img, text }: ImageComponentProps) => (
     </div>
   </div>
 )
-
-// {/* <div className="Expertise-page__knowledges">
-//         {/* <DynamicComponentWithNoSSR/> */}
-// </div> */}

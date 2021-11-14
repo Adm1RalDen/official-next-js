@@ -58,7 +58,6 @@
   .Expertise-page__cards {
     display: flex;
     margin: 0 10px;
-    // flex-wrap: wrap;
     .Expertise-page__cards-each {
       position: relative;
       display: flex;
@@ -141,7 +140,9 @@
       > img {
         margin-top: auto;
         padding-bottom: 10px;
-        width: 7.5vw;
+        width: 8vw;
+        height: 154px;
+        object-fit: none;
       }
 
       .Expertise-page__knowledge-each {
