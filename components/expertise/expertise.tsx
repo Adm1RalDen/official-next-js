@@ -26,7 +26,7 @@ const ExpertisePage = () => {
       <div className="Expertise-page__last-block">
         <div className="Expertise-page__last-block-wws">WORKING WITH US</div>
         <div className="Expertise-page__last-block-text">
-          We strive to meet your business goals through technology
+          We strive to meet your business goals through our experience and new technology
           implementation.
         </div>
         <Button name="GET IN TOUCH" className="button1" />
