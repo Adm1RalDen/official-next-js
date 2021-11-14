@@ -118,6 +118,7 @@
 
   .Expertise-page__knowledge {
     display: flex;
+    justify-content: center;
     width: 66%;
     flex-wrap: wrap;
     margin: 0 auto;
@@ -131,7 +132,6 @@
       padding: 70px 0;
       justify-content: space-between;
       min-width: 200px;
-
       > svg {
         width: 50px;
         padding-bottom: 20px;
