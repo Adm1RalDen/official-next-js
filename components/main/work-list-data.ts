@@ -1,6 +1,6 @@
 export const WorkDataList = [
   {
-    href: 'works/Project1.png',
+    href: 'works/project1',
     linkUrl: './images/Screen4.png',
     imageAlt: 'Management system for delivery services',
     workName: 'Management system for delivery services',

@@ -18,7 +18,7 @@ const Main: React.FC = () => {
           {({ scroll }) => (
             <Arrow
               className="Main__scroll-to-down"
-              onClick={() => scroll({ x: 20, y: 700, smooth: true })}
+              onClick={() => scroll({ x: 20, y: 1000, smooth: true })}
             />
           )}
         </ScrollTo>

@@ -8,7 +8,7 @@ const Index: NextPage = () => {
   return (
     <>
       <Head>
-        <title>Index Page</title>
+        <title>Light Impulse</title>
         <meta
           name="Description"
           content="We are an software and web development studio with office in Kiev, Ukraine. We believe that web represents great opportunity to grow for every industry right now. We make complex solutions for websites, portals, applications, as well as integration with products from leading global brands.We are an software and web development studio with office in Kiev, Ukraine. We believe that web represents great opportunity to grow for every industry right now. We make complex solutions for websites, portals, applications, as well as integration with products from leading global brands."

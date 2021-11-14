@@ -3,7 +3,7 @@
 
   .Expertise-page__wrapper {
     background-position: center top;
-    background-image: url(https://wtt-solutions.com/wp-content/uploads/2018/07/christopher-gower-291246-unsplash.jpg);
+    background-image: url('../../public/images/expertise.jpeg');
     background-size: cover;
     position: relative;
     background-repeat: no-repeat;
@@ -35,6 +35,7 @@
     left: 50%;
     transform: translate(-50%, -50%);
     position: absolute;
+    text-shadow: 1px 1px 1px black;
   }
 
   .Expertise-page__top-text-wrapper {
