@@ -1,9 +1,11 @@
+import { useRouter } from 'next/router'
 import React from 'react'
 import Button from '../_elements/button'
 import { imgData } from './expertise-data'
 import Skills from './skills'
 
 const ExpertisePage = () => {
+  const router = useRouter()
   return (
     <div className="Expertise-page">
       <div className="Expertise-page__wrapper">
@@ -26,10 +28,14 @@ const ExpertisePage = () => {
       <div className="Expertise-page__last-block">
         <div className="Expertise-page__last-block-wws">WORKING WITH US</div>
         <div className="Expertise-page__last-block-text">
-          We strive to meet your business goals through our experience and new technology
-          implementation.
+          We strive to meet your business goals through our experience and new
+          technology implementation.
         </div>
-        <Button name="GET IN TOUCH" className="button1" />
+        <Button
+          name="GET IN TOUCH"
+          className="button1"
+          onClick={() => router.push('/contact')}
+        />
       </div>
     </div>
   )
