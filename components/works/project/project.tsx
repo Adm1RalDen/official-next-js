@@ -54,7 +54,7 @@ const Project: React.FC<ProjectProps> = (data) => {
               <div className="specifications">
                 <div className="specifications-technologies-block">
                   <h4 className="specifications-technologies-block-title">Technologies</h4>
-                  {technologies.map((t) => <div className="item"><span>{t}</span></div>)}
+                  {technologies.map((t) => <div className="item" key={t}><span>{t}</span></div>)}
                 </div>
                 <div className="specifications-wrapper">
                   <div className="specifications-duration-block">
