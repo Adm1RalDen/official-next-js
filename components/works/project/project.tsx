@@ -1,6 +1,4 @@
-import React from 'react'
-import { ScrollTo } from 'react-scroll-to'
-import Arrow from '../../../assets/icons/arrow.svg'
+import React, { useEffect } from 'react'
 
 export interface ProjectProps {
   technologies: string[];
@@ -12,35 +10,31 @@ export interface ProjectProps {
   imageAlt: string;
   duration: string;
   efforts: string;
+  disclose?: boolean;
 }
 
 const Project: React.FC<ProjectProps> = (data) => {
-  const { technologies, title, hrefWeb, aimProject, description, image, imageAlt, duration, efforts } = data;
+  const { technologies, title, hrefWeb, aimProject, description, image, imageAlt, duration, efforts, disclose = true } = data;
+
   return (
     <>
       <section className='Project-page'>
-
-        <div className='Project-page-heroImage'>
-          <h2 className='Project-page-heroImage-title'>{title}</h2>
-          <ScrollTo>
-            {({ scroll }) => (
-              <Arrow
-                className="Main__scroll-to-down"
-                onClick={() => scroll({ x: 20, y: window.innerHeight - 50, smooth: true })}
-              />
-            )}
-          </ScrollTo>
-        </div>
-
         <div className='Project-page-content-wrapper'>
           <div className="Project-page-content-container">
             <div className="Project-page-content">
 
               <div className="text-block">
-                <div className="title"><h3><a href={hrefWeb} target='_blank'>{title}</a></h3></div>
+                <div className="title"><h3>
+                  {
+                    hrefWeb !== '' ? <a href={hrefWeb} target='_blank' className='title_a'>{title}</a> :
+                      <span className='title_a'>{title}</span>
+                  }
+                </h3></div>
                 <div className="descrition">
                   <div className="descrition-visio">
+
                     <p>{aimProject}</p>  <br /> <p>{description}</p>
+                    {!disclose ? <div className='disclose-block'>Do not disclose</div> : null}
                   </div>
                 </div>
               </div>

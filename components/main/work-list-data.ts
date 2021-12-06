@@ -1,32 +1,36 @@
 export const WorkDataList = [
   {
-    href: 'works/project1',
-    linkUrl: './images/Screen4.png',
-    imageAlt: 'Management system for delivery services',
-    workName: 'Management system for delivery services',
+    href: 'works/luklabs/',
+    linkUrl: './images/luklabs/small.png',
+    imageAlt: 'Luklabs',
+    workName: 'Luklabs',
     tehnoList: ['Custom Software Development', 'UI/UX Design'],
   },
+
   {
-    href: 'works/Project2.png',
-    linkUrl: './images/Screen3.png',
-    imageAlt: 'Moving Company Website Redesign',
-    workName: 'Moving Company Website Redesign',
+    href: 'works/mdinaglass/',
+    linkUrl: './images/mdinaglass/small.png',
+    imageAlt: 'Mdina Glass',
+    workName: 'Mdina Glass',
     tehnoList: ['UI/UX Design',  'Web Design & Development'],
   },
+
   {
-    href: 'works/Project3.png',
-    linkUrl: './images/Screen5.png',
-    imageAlt: 'Goldimaz',
-    workName: 'Goldimaz',
+    href: 'works/7option/',
+    linkUrl: './images/7option/small.png',
+    imageAlt: '7Option',
+    workName: '7Option',
     tehnoList: ['UI/UX Design', 'Web Design & Development'],
   },
+
   {
-    href: 'works/Project4.png',
-    linkUrl: './images/Screen2.png',
-    imageAlt: 'Risk assessment platform',
-    workName: 'Risk assessment platform',
+    href: 'works/smart/',
+    linkUrl: './images/smart/small.png',
+    imageAlt: 'Smart Home',
+    workName: 'Smart Home',
     tehnoList: ['Custom Software Development', 'UI/UX Design'],
   },
+  
   {
     href: 'works/Project5.png',
     linkUrl: './images/Screen1.png',

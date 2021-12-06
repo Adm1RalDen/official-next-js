@@ -6,7 +6,7 @@ export const ProjectData: ProjectProps = {
   hrefWeb: 'https://luklabs.com/',
   aimProject: "For millions of families one of the most important decisions in their teenager\'s life searching for the right college can be         difficult, expensive and time-consuming.",
   description: "Luklabs was created to make it easy to get these insights, 1-on-1, from the 'right' college students. We match and connect prospective students and their families with vetted and trained college students for live video tours and conversations.",
-  image: "https://wtt-solutions.com/_next/image?url=%2Fimages%2Fcases%2Fluk%2FimgDesk.png&w=1200&q=85",
+  image: "../images/luklabs/large.png",
   imageAlt: "Luklabs",
   duration: "16 Months",
   efforts: "39 Person-months",

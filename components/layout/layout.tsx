@@ -4,6 +4,7 @@ import Footer from 'components/footer/footer'
 import { useScrollPosition } from '@n8tb1t/use-scroll-position'
 import { ScrollTo } from 'react-scroll-to'
 import Meta from './layout-meta'
+
 interface PageProps {
   children?: React.ReactNode
   className?: string
