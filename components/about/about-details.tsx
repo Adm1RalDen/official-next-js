@@ -1,6 +1,6 @@
 import React from 'react'
 
-export const AboutDetails = () => (
+export const AboutDetails: React.FC = () => (
   <div className="about__wtt-solutions-details">
     <p>Quality comes first.</p>
     <p>
