@@ -26,7 +26,7 @@ const Project: React.FC<ProjectProps> = (data) => {
               <div className="text-block">
                 <div className="title"><h3>
                   {
-                    hrefWeb !== '' ? <a href={hrefWeb} target='_blank' className='title_a'>{title}</a> :
+                    hrefWeb !== '' ? <a href={hrefWeb} target='_blank' rel="noreferrer" className='title_a'>{title}</a> :
                       <span className='title_a'>{title}</span>
                   }
                 </h3></div>
