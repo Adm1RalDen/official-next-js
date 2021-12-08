@@ -1,7 +1,7 @@
-import React from 'react'
+import React, { FC } from 'react'
 import { Carousel } from 'react-responsive-carousel'
 
-export const AboutSlider = () => {
+export const AboutSlider: FC = () => {
   return (
     <Carousel
       showArrows={false}
@@ -23,7 +23,7 @@ export const AboutSlider = () => {
 
 const Indicator = (
   onClickHandler: (
-    e: MouseEvent<Element, MouseEvent> | KeyboardEvent<Element>
+    e: React.MouseEvent<Element, MouseEvent> | React.KeyboardEvent<Element>
   ) => void,
   isSelected: boolean,
   index: number

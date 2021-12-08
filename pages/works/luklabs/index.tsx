@@ -1,11 +1,11 @@
-import React from 'react'
+import React, { FC } from 'react'
 import Head from 'next/head'
 import Layout from '@/components/layout/layout'
 import LayoutContainer from '@/components/layout/layout-container'
 import Project from '@/components/works/project/project'
-import { ProjectData } from './data'
+import { ProjectData } from '../../../data/luklabs'
 
-const Project1Page = () => {
+const Project1Page: FC = () => {
   return (
     <>
       <Head>

@@ -1,13 +1,17 @@
-import { forwardRef, useState } from 'react'
+import React, { useState } from 'react'
 import FlipMove from 'react-flip-move'
 import { WorkDataList } from '../main/work-list-data'
 import WorkCard from '../work-card/work-card'
 
-const FunctionalWork = forwardRef((props: any, ref: any) => (
-  <div ref={ref}>
-    <WorkCard {...props} />
-  </div>
-))
+const FunctionalWork = React.forwardRef<HTMLDivElement>((props: any, ref) => {
+  return (
+    <div ref={ref}>
+      <WorkCard {...props} />
+    </div>
+  )
+})
+
+FunctionalWork.displayName = 'FunctionalWork'
 
 const Work: React.FC = () => {
   const [activeFilter, setActiveFilter] = useState('All')

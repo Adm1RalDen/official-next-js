@@ -19,7 +19,7 @@ const Layout: React.FC<PageProps> = (props: PageProps) => {
   const [isShow, setIsShow] = useState(false)
 
   useScrollPosition(
-    ({ _, currPos }) => {
+    ({ currPos }) => {
       if (currPos.y < -350) {
         setIsShow(true)
       } else {

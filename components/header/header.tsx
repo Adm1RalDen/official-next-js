@@ -17,7 +17,7 @@ const Header: React.FC<IHeader> = (props: IHeader) => {
   const [isFixed, setIsFixed] = useState(true)
 
   useScrollPosition(
-    ({ _, currPos }) => {
+    ({ currPos }) => {
       if (currPos.y === 0) {
         setIsFixed(true)
       } else {
