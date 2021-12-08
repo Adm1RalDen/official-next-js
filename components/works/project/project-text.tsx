@@ -1,4 +1,4 @@
-export interface ProjectTextProps {
+interface ProjectTextProps {
   hrefWeb: string;
   title: string;
   aimProject: string;
@@ -6,7 +6,8 @@ export interface ProjectTextProps {
   disclose?: boolean;
 }
 
-const ProjectText: React.FC<ProjectTextProps> = ({ hrefWeb, title, aimProject, description, disclose }) => {
+const ProjectText: React.FC<ProjectTextProps> = (props: ProjectTextProps) => {
+  const { hrefWeb, title, aimProject, description, disclose } = props;
   return (
     <div className="text-block">
       <div className="title"><h3>

@@ -1,7 +1,7 @@
 import React from 'react'
-import ProjectImage, { ProjectImageProps } from './project-image';
-import ProjectSpecifications, { ProjectSpecificationsProps } from './project-specifications';
-import ProjectText, { ProjectTextProps } from './project-text';
+import ProjectImage from './project-image';
+import ProjectSpecifications from './project-specifications';
+import ProjectText from './project-text';
 
 export interface ProjectProps {
   technologies: string[];
@@ -19,22 +19,15 @@ export interface ProjectProps {
 const Project: React.FC<ProjectProps> = (data) => {
   const { technologies, title, hrefWeb, aimProject, description, image, imageAlt, duration, efforts, disclose = true } = data;
 
-  const textProps: ProjectTextProps = { hrefWeb, title, aimProject, description, disclose };
-  const imageProps: ProjectImageProps = { image, imageAlt };
-  const specificationsProps: ProjectSpecificationsProps = { technologies, duration, efforts };
-
   return (
     <>
       <section className='Project-page'>
         <div className='Project-page-content-wrapper'>
           <div className="Project-page-content-container">
             <div className="Project-page-content">
-
-              <ProjectText {...textProps} />
-
-              <ProjectImage {...imageProps} />
-
-              <ProjectSpecifications {...specificationsProps} />
+              <ProjectText hrefWeb={hrefWeb} title={title} aimProject={aimProject} description={description} disclose={disclose} />
+              <ProjectImage image={image} imageAlt={imageAlt} />
+              <ProjectSpecifications technologies={technologies} duration={duration} efforts={efforts}/>
             </div>
           </div>
         </div>
