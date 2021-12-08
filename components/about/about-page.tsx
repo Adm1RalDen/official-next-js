@@ -6,7 +6,6 @@ import TextImgBackground, {
 } from '@/components/text-img-bg/text-img-bg'
 import { AboutSlider } from '@/components/about/about-slider'
 import { useCounting } from '../../utils/hooks'
-
 import { AboutDetails } from './about-details'
 
 export const AboutPage: FC = () => {
