@@ -25,7 +25,6 @@ const Work: React.FC = () => {
   const handleChooseFilter = (key: string) => () => {
     setActiveFilter(key)
   }
-  console.log('render')
   return (
     <div className="Work">
       <h1>Work</h1>

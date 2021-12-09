@@ -10,7 +10,6 @@ export const ProjectData: ProjectProps = {
     'NodeJS',
     'Express',
     'Braintree',
-    'Amazon Web Service',
     'Paypal',
     'Skrill',
     'Perfect Money',
