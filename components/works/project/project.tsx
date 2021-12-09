@@ -19,7 +19,6 @@ export interface ProjectProps {
 const Project: React.FC<ProjectProps> = (data) => {
   const { technologies, title, siteURL, aimProject, description, image, imageAlt, duration, efforts, disclose = true } = data;
   return (
-    <>
       <section className='Project-page'>
         <div className='Project-page-content-wrapper'>
           <div className="Project-page-content-container">
@@ -31,7 +30,6 @@ const Project: React.FC<ProjectProps> = (data) => {
           </div>
         </div>
       </section>
-    </>
   )
 }
 export default Project

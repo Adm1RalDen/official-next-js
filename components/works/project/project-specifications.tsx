@@ -9,10 +9,10 @@ interface DataProps {
 const ProjectSpecifications: React.FC<DataProps> = ({ data: { technologies, duration, efforts } }) => {
   return (
     <div className="specifications">
-      
+
       <div className="specifications-technologies-block">
         <h4 className="specifications-technologies-block-title">Technologies</h4>
-        {technologies.map((t) => <div className="item" key={t}><span>{t}</span></div>)}
+        {technologies.map((t) => <div className="item" key={t}>{t}</div>)}
       </div>
 
       <div className="specifications-wrapper">
