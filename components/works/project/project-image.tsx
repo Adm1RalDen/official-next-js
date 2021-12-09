@@ -3,7 +3,11 @@ interface ProjectImageProps {
   imageAlt: string;
 }
 
-const ProjectImage: React.FC<ProjectImageProps> = ({image, imageAlt}) => {
+interface DataProps {
+  data: ProjectImageProps;
+}
+
+const ProjectImage: React.FC<DataProps> = ({ data: { image, imageAlt } }) => {
   return (
     <div className="image-block">
       <img src={image} alt={imageAlt} />

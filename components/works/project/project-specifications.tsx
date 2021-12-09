@@ -3,8 +3,10 @@ interface ProjectSpecificationsProps {
   duration: string;
   efforts: string;
 }
-
-const ProjectSpecifications: React.FC<ProjectSpecificationsProps> = ({ technologies, duration, efforts }) => {
+interface DataProps {
+  data: ProjectSpecificationsProps;
+}
+const ProjectSpecifications: React.FC<DataProps> = ({ data: { technologies, duration, efforts } }) => {
   return (
     <div className="specifications">
       <div className="specifications-technologies-block">

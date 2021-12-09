@@ -24,9 +24,9 @@ const Project: React.FC<ProjectProps> = (data) => {
         <div className='Project-page-content-wrapper'>
           <div className="Project-page-content-container">
             <div className="Project-page-content">
-              <ProjectText hrefWeb={hrefWeb} title={title} aimProject={aimProject} description={description} disclose={disclose} />
-              <ProjectImage image={image} imageAlt={imageAlt} />
-              <ProjectSpecifications technologies={technologies} duration={duration} efforts={efforts}/>
+              <ProjectText data={{ hrefWeb, title, aimProject, description, disclose }} />
+              <ProjectImage data={{ image, imageAlt }} />
+              <ProjectSpecifications data={{ technologies, duration, efforts }} />
             </div>
           </div>
         </div>
