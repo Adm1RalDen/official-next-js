@@ -6,7 +6,7 @@ import ProjectText from './project-text';
 export interface ProjectProps {
   technologies: string[];
   title: string;
-  hrefWeb: string;
+  siteURL: string;
   aimProject: string;
   description: string;
   image: string;
@@ -17,14 +17,14 @@ export interface ProjectProps {
 }
 
 const Project: React.FC<ProjectProps> = (data) => {
-  const { technologies, title, hrefWeb, aimProject, description, image, imageAlt, duration, efforts, disclose = true } = data;
+  const { technologies, title, siteURL, aimProject, description, image, imageAlt, duration, efforts, disclose = true } = data;
   return (
     <>
       <section className='Project-page'>
         <div className='Project-page-content-wrapper'>
           <div className="Project-page-content-container">
             <div className="Project-page-content">
-              <ProjectText data={{ hrefWeb, title, aimProject, description, disclose }} />
+              <ProjectText data={{ siteURL, title, aimProject, description, disclose }} />
               <ProjectImage data={{ image, imageAlt }} />
               <ProjectSpecifications data={{ technologies, duration, efforts }} />
             </div>
