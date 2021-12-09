@@ -4,8 +4,7 @@ interface ProjectSpecificationsProps {
   efforts: string;
 }
 
-const ProjectSpecifications: React.FC<ProjectSpecificationsProps> = (props: ProjectSpecificationsProps) => {
-  const { technologies, duration, efforts } = props;
+const ProjectSpecifications: React.FC<ProjectSpecificationsProps> = ({ technologies, duration, efforts }) => {
   return (
     <div className="specifications">
       <div className="specifications-technologies-block">

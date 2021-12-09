@@ -3,8 +3,7 @@ interface ProjectImageProps {
   imageAlt: string;
 }
 
-const ProjectImage: React.FC<ProjectImageProps> = (props: ProjectImageProps) => {
-  const { image, imageAlt } = props;
+const ProjectImage: React.FC<ProjectImageProps> = ({image, imageAlt}) => {
   return (
     <div className="image-block">
       <img src={image} alt={imageAlt} />
