@@ -27,6 +27,7 @@ module.exports = {
     'import/no-unresolved': 0,
     'import/named': 2,
     'import/order': 1,
+    'max-len': [0, 160, 2, { ignoreUrls: true }]
     // Place to specify ESLint rules. Can be used to overwrite rules specified from the extended configs
     // e.g. "@typescript-eslint/explicit-function-return-type": "off",
   },

@@ -1,15 +1,14 @@
-import React, { useRef } from 'react'
+import React, { useRef, FC } from 'react'
 
 import { Button } from '@/components/_elements/button'
 import TextImgBackground, {
   TextItem,
 } from '@/components/text-img-bg/text-img-bg'
-import { useCounting } from '../../utils/hooks'
-
-import { AboutDetails } from './about-details'
 import { AboutSlider } from '@/components/about/about-slider'
+import { useCounting } from '../../utils/hooks'
+import { AboutDetails } from './about-details'
 
-export const AboutPage = () => {
+export const AboutPage: FC = () => {
   const topText = ['great experiences', 'build great products']
   const infoCountingCards = [
     { count: 58, title: 'Awesome projects' },

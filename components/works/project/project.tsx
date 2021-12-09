@@ -18,7 +18,6 @@ export interface ProjectProps {
 
 const Project: React.FC<ProjectProps> = (data) => {
   const { technologies, title, hrefWeb, aimProject, description, image, imageAlt, duration, efforts, disclose = true } = data;
-
   return (
     <>
       <section className='Project-page'>
