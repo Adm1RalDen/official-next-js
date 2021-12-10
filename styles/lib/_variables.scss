@@ -1,18 +1,17 @@
-
 /* colors */
 
-$white:       #fff;
-$black:       #000;
+$white: #fff;
+$black: #000;
 
-$grey-1:      shade(white, 11%);
-$grey-2:      shade(white, 22%);
-$grey-3:      shade(white, 33%);
-$grey-4:      shade(white, 44%);
-$grey-5:      shade(white, 55%);
-$grey-6:      shade(white, 66%);
-$grey-7:      shade(white, 77%);
-$grey-8:      shade(white, 88%);
-$grey-9:      shade(white, 99%);
+$grey-1: shade(white, 11%);
+$grey-2: shade(white, 22%);
+$grey-3: shade(white, 33%);
+$grey-4: shade(white, 44%);
+$grey-5: shade(white, 55%);
+$grey-6: shade(white, 66%);
+$grey-7: shade(white, 77%);
+$grey-8: shade(white, 88%);
+$grey-9: shade(white, 99%);
 
 $red:         #e54b4b;
 $blue:        #8fd1ed;
@@ -20,36 +19,36 @@ $green:       #7bc258;
 $button-green:#29B82E;
 $violet:      #71409d;
 
-$color-bg-1:    $red;
-$color-bg-2:    $blue;
-$color-bg-3:    $green;
+$color-bg-1: $red;
+$color-bg-2: $blue;
+$color-bg-3: $green;
 
-$color-input:   #f3f3f4;
-$color-black:   #231f20;
+$color-input: #f3f3f4;
+$color-black: #231f20;
 
 /* other */
 
-$box-shadow: 4px 4px 6px rgba($black, .22);
 $box-shadow-project: 0px 0px 5px rgb(230, 230, 230);
+$box-shadow: 4px 4px 6px rgba($black, 0.22);
 
 /* font */
 
 $font: 'Lato', sans-serif;
 $font2: 'Cabin', sans-serif;
 
-$fw-light:  300;
+$fw-light: 300;
 $fw-normal: 400;
-$fw-bold:   700;
-$fw-black:  900;
+$fw-bold: 700;
+$fw-black: 900;
 
 /* breakpoints */
 
-$smaller:   320px;
-$mob:       576px - 1;
-$mobile:    768px - 1;
-$tablet:    992px - 1;
-$laptop:    1166px;
-$desktop:   1200px;
+$smaller: 320px;
+$mob: 576px - 1;
+$mobile: 768px - 1;
+$tablet: 992px - 1;
+$laptop: 1166px;
+$desktop: 1200px;
 
 /* layout */
 
@@ -60,15 +59,15 @@ $layout-pad-mobile: 22px;
 
 /* z-index */
 
-$z-dropdown:      97;
-$z-header:        98;
-$z-main-player:   99;
-$z-layout-popup:  100;
-$z-modal:         101;
-$z-loader:        102;
+$z-dropdown: 97;
+$z-header: 98;
+$z-main-player: 99;
+$z-layout-popup: 100;
+$z-modal: 101;
+$z-loader: 102;
 
 /* header height */
 
-$heaedr-height-desktop:  99px;
-$heaedr-height-laptop:   88px;
-$heaedr-height-mob:      77px;
+$heaedr-height-desktop: 99px;
+$heaedr-height-laptop: 88px;
+$heaedr-height-mob: 77px;

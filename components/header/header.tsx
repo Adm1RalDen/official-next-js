@@ -66,7 +66,12 @@ const Header: React.FC<IHeader> = (props: IHeader) => {
           })}
         </nav>
         <div className="Search">
-          <img src={`/images/search${ isFixed && !headerIsFixed ? '-white' : ''}.png`} alt="search icon" />
+          <img
+            src={`/images/search${
+              isFixed && !headerIsFixed ? '-white' : ''
+            }.png`}
+            alt="search icon"
+          />
         </div>
       </div>
     </div>

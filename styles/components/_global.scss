@@ -2,9 +2,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Cabin:wght@700&display=swap');
 
 html {
-  h1, h2, h3, h4, h5, h6, b {
-		font-weight: $fw-bold;
-	}
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  b {
+    font-weight: $fw-bold;
+  }
   body {
     font-family: $font;
     font-size: 1.6rem;
