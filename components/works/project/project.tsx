@@ -19,17 +19,17 @@ export interface ProjectProps {
 const Project: React.FC<ProjectProps> = (data) => {
   const { technologies, title, siteURL, aimProject, description, image, imageAlt, duration, efforts, disclose = true } = data;
   return (
-      <section className='Project-page'>
-        <div className='Project-page-content-wrapper'>
-          <div className="Project-page-content-container">
-            <div className="Project-page-content">
-              <ProjectText data={{ siteURL, title, aimProject, description, disclose }} />
-              <ProjectImage data={{ image, imageAlt }} />
-              <ProjectSpecifications data={{ technologies, duration, efforts }} />
-            </div>
+    <section className='Project-page'>
+      <div className='Project-page-content-wrapper'>
+        <div className="Project-page-content-container">
+          <div className="Project-page-content">
+            <ProjectText data={{ siteURL, title, aimProject, description, disclose }} />
+            <ProjectImage image={image} imageAlt={imageAlt} />
+            <ProjectSpecifications technologies={technologies} duration={duration} efforts={efforts} />
           </div>
         </div>
-      </section>
+      </div>
+    </section>
   )
 }
 export default Project

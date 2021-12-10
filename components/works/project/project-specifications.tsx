@@ -3,13 +3,10 @@ interface ProjectSpecificationsProps {
   duration: string;
   efforts: string;
 }
-interface DataProps {
-  data: ProjectSpecificationsProps;
-}
-const ProjectSpecifications: React.FC<DataProps> = ({ data: { technologies, duration, efforts } }) => {
+
+const ProjectSpecifications: React.FC<ProjectSpecificationsProps> = ({ technologies, duration, efforts }) => {
   return (
     <div className="specifications">
-
       <div className="specifications-technologies-block">
         <h4 className="specifications-technologies-block-title">Technologies</h4>
         {technologies.map((t) => <div className="item" key={t}>{t}</div>)}
