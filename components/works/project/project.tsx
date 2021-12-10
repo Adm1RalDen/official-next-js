@@ -37,7 +37,12 @@ const Project: React.FC<ProjectProps> = (data) => {
                 <div className="title">
                   <h3>
                     {hrefWeb !== '' ? (
-                      <a href={hrefWeb} target="_blank" rel="noreferrer" className="title_a">
+                      <a
+                        href={hrefWeb}
+                        target="_blank"
+                        rel="noreferrer"
+                        className="title_a"
+                      >
                         {title}
                       </a>
                     ) : (
@@ -48,7 +53,9 @@ const Project: React.FC<ProjectProps> = (data) => {
                 <div className="descrition">
                   <div className="descrition-visio">
                     <p>{aimProject}</p> <br /> <p>{description}</p>
-                    {!disclose ? <div className="disclose-block">Do not disclose</div> : null}
+                    {!disclose ? (
+                      <div className="disclose-block">Do not disclose</div>
+                    ) : null}
                   </div>
                 </div>
               </div>
@@ -59,7 +66,9 @@ const Project: React.FC<ProjectProps> = (data) => {
 
               <div className="specifications">
                 <div className="specifications-technologies-block">
-                  <h4 className="specifications-technologies-block-title">Technologies</h4>
+                  <h4 className="specifications-technologies-block-title">
+                    Technologies
+                  </h4>
                   {technologies.map((t) => (
                     <div className="item" key={t}>
                       <span>{t}</span>

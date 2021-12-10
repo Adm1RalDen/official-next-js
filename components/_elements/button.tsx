@@ -10,7 +10,7 @@ export const Button: React.FC<any> = (props: Props) => {
 
   if (className) finalClassName.push(className)
   if (size) finalClassName.push(size)
-  
+
   return (
     <button {...props} className={finalClassName.join(' ')}>
       {props?.name}

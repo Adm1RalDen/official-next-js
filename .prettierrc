@@ -9,5 +9,5 @@
   "arrowParens": "always",
   "trailingComma": "es5",
   "endOfLine": "lf",
-  "printWidth": 100
+  "printWidth": 80
 }

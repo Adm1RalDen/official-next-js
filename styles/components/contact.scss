@@ -14,7 +14,12 @@
     font-family: Lato, sans-serif;
 
     > .Contact-page__image-wrapper {
-      background: url('/images/contact-us.jpg'), linear-gradient(90deg, rgba(59,56,59,0.896796218487395) 0%, rgba(26,26,27,1) 100%);
+      background: url('/images/contact-us.jpg'),
+        linear-gradient(
+          90deg,
+          rgba(59, 56, 59, 0.896796218487395) 0%,
+          rgba(26, 26, 27, 1) 100%
+        );
       background-repeat: no-repeat;
       background-position: center;
       background-size: cover;
@@ -170,7 +175,6 @@
           }
         }
       }
-
 
       & .Contact-page__wrapper {
         flex-direction: column;

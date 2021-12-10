@@ -12,7 +12,7 @@ export const WorkDataList = [
     linkUrl: './images/mdinaglass/small.png',
     imageAlt: 'Mdina Glass',
     workName: 'Mdina Glass',
-    tehnoList: ['UI/UX Design',  'Web Design & Development'],
+    tehnoList: ['UI/UX Design', 'Web Design & Development'],
   },
 
   {
@@ -30,7 +30,7 @@ export const WorkDataList = [
     workName: 'Smart Home',
     tehnoList: ['Custom Software Development', 'UI/UX Design'],
   },
-  
+
   {
     href: 'works/Project5.png',
     linkUrl: './images/Screen1.png',
