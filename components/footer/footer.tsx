@@ -15,7 +15,10 @@ const Footer: React.FC = () => {
         <div className="Footer__section">
           <h3>contact</h3>
           <p>
-            <a href='mailto:info@wtt-nosolutions.com'>info@wtt-nosolutions.com</a> / +380 (97) 777-77-77
+            <a href="mailto:info@wtt-nosolutions.com">
+              info@wtt-nosolutions.com
+            </a>{' '}
+            / +380 (97) 777-77-77
           </p>
         </div>
       </div>
