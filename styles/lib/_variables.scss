@@ -13,10 +13,11 @@ $grey-7: shade(white, 77%);
 $grey-8: shade(white, 88%);
 $grey-9: shade(white, 99%);
 
-$red: #e54b4b;
-$blue: #8fd1ed;
-$green: #7bc258;
-$button-green: #29b82e;
+$red:         #e54b4b;
+$blue:        #8fd1ed;
+$green:       #7bc258;
+$button-green:#29B82E;
+$violet:      #71409d;
 
 $color-bg-1: $red;
 $color-bg-2: $blue;
@@ -27,6 +28,7 @@ $color-black: #231f20;
 
 /* other */
 
+$box-shadow-project: 0px 0px 5px rgb(230, 230, 230);
 $box-shadow: 4px 4px 6px rgba($black, 0.22);
 
 /* font */

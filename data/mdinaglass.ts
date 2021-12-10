@@ -13,7 +13,7 @@ export const ProjectData: ProjectProps = {
     'Rest API',
   ],
   title: 'Mdina Glass',
-  hrefWeb: 'https://mdinaglass.com.mt/en/home.htm',
+  siteURL: 'https://mdinaglass.com.mt/en/home.htm',
   aimProject: `Mdina Glass was set up in 1968 as Malta’s first glass making company using a blend of traditional glassblowing techniques and those from the burgeoning studio glass movements of the early-to-mid 60s.`,
   description:
     'The Mdina Glass website was designed for Mdina Glass to sell their products worldwide. Users of the site can get information about products, create your account, place an order.',

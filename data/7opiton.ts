@@ -7,17 +7,13 @@ export const ProjectData: ProjectProps = {
     'Redux-Saga',
     'Sass',
     'CanvasJS',
-    'NodeJS',
-    'Express',
-    'Braintree',
-    'Amazon Web Service',
     'Paypal',
     'Skrill',
     'Perfect Money',
     'MasterCard',
   ],
   title: '7option',
-  hrefWeb: 'https://7option.com/en/',
+  siteURL: 'https://7option.com/en/',
   aimProject:
     'The 7Option was for created Improve your trading skills and discover a wide range of financial opportunities.',
   description:
