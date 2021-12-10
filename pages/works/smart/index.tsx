@@ -1,4 +1,4 @@
-import React, { FC } from 'react'
+import React from 'react'
 import Head from 'next/head'
 import { NextPage } from 'next'
 import Layout from '@/components/layout/layout'

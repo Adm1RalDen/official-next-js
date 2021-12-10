@@ -3,7 +3,14 @@ import FlipMove from 'react-flip-move'
 import { WorkDataList } from '../main/work-list-data'
 import WorkCard from '../work-card/work-card'
 
-const FunctionalWork = React.forwardRef<HTMLDivElement>((props: any, ref) => {
+interface Props {
+  href: string
+  imageAlt: string
+  linkUrl: string
+  tehnoList: string[]
+  workName: string
+}
+const FunctionalWork = React.forwardRef<HTMLDivElement, Props>((props, ref) => {
   return (
     <div ref={ref}>
       <WorkCard {...props} />

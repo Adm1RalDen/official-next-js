@@ -4,7 +4,7 @@ interface Props {
   size?: 'small' | 'big'
 }
 
-export const Button: React.FC<any> = (props: Props) => {
+export const Button: React.FC<Props> = (props: Props) => {
   const { className, size } = props
   const finalClassName = [`Button`]
 

@@ -1,11 +1,7 @@
 import { ProjectProps } from '@/components/works/project/project'
 
 export const ProjectData: ProjectProps = {
-  technologies: ['React',
-    'Lodash',
-    'Gatsby',
-    'Netlify CMS',
-    'Rest API'],
+  technologies: ['React', 'Lodash', 'Gatsby', 'Netlify CMS', 'Rest API'],
   title: 'Smart Home',
   siteURL: '',
   aimProject:
