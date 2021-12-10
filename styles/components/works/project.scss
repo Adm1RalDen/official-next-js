@@ -3,7 +3,7 @@
   margin-bottom: 50px;
   &-content-wrapper {
     padding-top: 12vh;
-    background-color: rgb(255, 255, 255);
+    background-color: $white;
   }
 }
 // ----------CONTAINER-----------------
@@ -51,7 +51,7 @@
       a {
         text-decoration: none;
         position: relative;
-        color: #71409d;
+        color: $violet;
         transition: all 300ms cubic-bezier(0.173, 0.883, 0.3, 1.073) 0s;
         -moz-transition: all 300ms cubic-bezier(0.173, 0.883, 0.3, 1.073) 0s;
         -webkit-transition: all 300ms cubic-bezier(0.173, 0.883, 0.3, 1.073) 0s;
@@ -69,7 +69,7 @@
           bottom: -5px;
           left: 0;
           right: 0;
-          background: #71409d;
+          background: $violet;
           -webkit-transition: all 0.3s;
           transition: all 0.3s;
         }
@@ -96,7 +96,7 @@
 
       .disclose-block {
         margin-top: 20px;
-        color: rgb(226, 35, 35);
+        color: $red;
       }
     }
   }
@@ -137,7 +137,7 @@
 
     &-technologies-block {
       padding: 10px 10px;
-      box-shadow: 0px 0px 5px rgb(230, 230, 230);
+      box-shadow:$box-shadow-project;
       &-title {
         padding-left: 5px;
       }
@@ -146,23 +146,23 @@
         padding: 10px;
         margin: 5px 5px;
         border: 1px solid gray;
-        background-color: white;
+        background-color: $white;
         transition: 0.3s;
         cursor: pointer;
 
         &:hover {
-          background-color: black;
-          color: white;
+          background-color: $black;
+          color: $white;
         }
       }
     }
     &-duration-block {
       padding: 10px 10px;
-      box-shadow: 0px 0px 5px rgb(230, 230, 230);
+      box-shadow: $box-shadow-project;
     }
     &-efforts-block {
       padding: 10px 10px;
-      box-shadow: 0px 0px 5px rgb(230, 230, 230);
+      box-shadow: $box-shadow-project;
     }
   }
 }
