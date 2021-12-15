@@ -2,6 +2,7 @@ interface Props {
   name?: string
   className?: string
   size?: 'small' | 'big'
+  onClick?: () => void
 }
 
 export const Button: React.FC<Props> = (props: Props) => {
@@ -12,7 +13,11 @@ export const Button: React.FC<Props> = (props: Props) => {
   if (size) finalClassName.push(size)
 
   return (
-    <button {...props} className={finalClassName.join(' ')}>
+    <button
+      {...props}
+      className={finalClassName.join(' ')}
+      onClick={props.onClick}
+    >
       {props?.name}
     </button>
   )
