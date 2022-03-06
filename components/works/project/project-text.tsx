@@ -9,14 +9,14 @@ interface DataProps {
   data: ProjectTextProps
 }
 
-const ProjectText: React.FC<DataProps> = ({
+const ProjectText = ({
   data: { siteURL, title, aimProject, description, disclose },
-}) => {
+}: DataProps) => {
   return (
     <div className="text-block">
       <h3 className="text-block-title">
         {siteURL ? (
-          <a href={siteURL} target="_blank">
+          <a href={siteURL} target="_blank" rel="noreferrer">
             {title}
           </a>
         ) : (

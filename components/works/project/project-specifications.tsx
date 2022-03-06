@@ -4,11 +4,11 @@ interface ProjectSpecificationsProps {
   efforts: string
 }
 
-const ProjectSpecifications: React.FC<ProjectSpecificationsProps> = ({
+const ProjectSpecifications = ({
   technologies,
   duration,
   efforts,
-}) => {
+}: ProjectSpecificationsProps) => {
   return (
     <div className="specifications">
       <div className="specifications-technologies-block">
