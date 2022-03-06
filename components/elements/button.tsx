@@ -1,24 +1,19 @@
 interface Props {
-  name?: string
+  name: string
   className?: string
   size?: 'small' | 'big'
   onClick?: () => void
 }
 
-export const Button: React.FC<Props> = (props: Props) => {
-  const { className, size } = props
+export const Button: React.FC<Props> = ({ className, size, onClick, name }) => {
   const finalClassName = [`Button`]
 
   if (className) finalClassName.push(className)
   if (size) finalClassName.push(size)
 
   return (
-    <button
-      {...props}
-      className={finalClassName.join(' ')}
-      onClick={props.onClick}
-    >
-      {props?.name}
+    <button className={finalClassName.join(' ')} onClick={onClick}>
+      {name}
     </button>
   )
 }
