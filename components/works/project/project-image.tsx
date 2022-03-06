@@ -3,11 +3,11 @@ interface ProjectImageProps {
   imageAlt: string
 }
 
-const ProjectImage: React.FC<ProjectImageProps> = ({ image, imageAlt }) => {
+const ProjectImage = ({ image, imageAlt }: ProjectImageProps) => {
   return (
     <div className="image-block">
       <img src={image} alt={imageAlt} />
     </div>
   )
 }
-export default ProjectImage;
+export default ProjectImage
