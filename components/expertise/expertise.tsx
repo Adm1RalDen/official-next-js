@@ -1,6 +1,6 @@
 import { useRouter } from 'next/router'
 import React from 'react'
-import Button from '../_elements/button'
+import Button from '../elements/button'
 import { imgData } from './expertise-data'
 import Skills from './skills'
 

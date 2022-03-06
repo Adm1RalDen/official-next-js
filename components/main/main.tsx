@@ -3,7 +3,7 @@ import Link from 'next/link'
 import { ScrollTo } from 'react-scroll-to'
 // import HeaderBackgound from 'assets/backgrounds/background.svg'
 import WorkCard from '../work-card/work-card'
-import Button from '../_elements/button'
+import Button from '../elements/button'
 import { WorkDataList } from './work-list-data'
 
 const Main: React.FC = () => {

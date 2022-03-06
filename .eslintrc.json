@@ -30,6 +30,7 @@
     "prettier/prettier": "off",
     "import/no-unresolved": "off",
     "import/named": "error",
-    "import/order": "warn"
+    "import/order": "warn",
+    "react/prop-types": "off"
   }
 }

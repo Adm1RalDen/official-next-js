@@ -1,6 +1,6 @@
 import React, { useRef, FC } from 'react'
 
-import { Button } from '@/components/_elements/button'
+import { Button } from '@/components/elements/button'
 import TextImgBackground, {
   TextItem,
 } from '@/components/text-img-bg/text-img-bg'

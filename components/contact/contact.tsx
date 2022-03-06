@@ -1,8 +1,8 @@
 import Link from 'next/link'
 import React from 'react'
-import Button from '../_elements/button'
-import Input from '../_elements/input'
-import Textarea from '../_elements/textarea'
+import Button from '../elements/button'
+import Input from '../elements/input'
+import Textarea from '../elements/textarea'
 
 const ContactPage = () => {
   return (

@@ -1,5 +1,7 @@
-interface Props {
-  onChange?: any // eslint-disable-line
+import { FunctionComponent } from 'react'
+
+interface IProps {
+  onChange?: (props: unknown) => void
   value?: string
   className?: string
   name?: string
@@ -11,8 +13,8 @@ interface Props {
   maxLength?: number
 }
 
-export const Textarea: React.FC<Props> = (props: Props) => {
-  const { className } = props
+// eslint-disable-next-line react/prop-types
+const Textarea: FunctionComponent<IProps> = ({ className, ...props }) => {
   const finalClassName = [`Textarea`]
 
   if (className) finalClassName.push(className)

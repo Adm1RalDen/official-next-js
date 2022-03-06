@@ -38,6 +38,7 @@ const SkillElement = handleViewport(
       if (inViewport && !needRender) {
         setNeedsRender(true)
       }
+      // eslint-disable-next-line
     }, [inViewport, enterCount])
 
     return (
