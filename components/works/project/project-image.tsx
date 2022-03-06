@@ -10,4 +10,4 @@ const ProjectImage: React.FC<ProjectImageProps> = ({ image, imageAlt }) => {
     </div>
   )
 }
-export default ProjectImage;
+export default ProjectImage

@@ -1,7 +1,8 @@
-import Link from 'next/link'
 import { useScrollPosition } from '@n8tb1t/use-scroll-position'
-import { useState } from 'react'
+import Logo from 'assets/icons/logo.svg'
+import Link from 'next/link'
 import { useRouter } from 'next/router'
+import { useState } from 'react'
 
 interface IHeader {
   bgColor?: string
@@ -42,14 +43,10 @@ const Header: React.FC<IHeader> = (props: IHeader) => {
       <div className="Header__Container">
         <div className="Header__Logo">
           <Link href="/">
-            <a>
-              <img
-                src={`/icons/logo-wtt${
-                  isFixed && !headerIsFixed ? '-w' : ''
-                }.svg`}
-                alt="Logo"
-              />
-            </a>
+            <div>
+              <Logo />
+              <span>Light Impulse</span>
+            </div>
           </Link>
         </div>
         <nav className="Header__Navigation">
